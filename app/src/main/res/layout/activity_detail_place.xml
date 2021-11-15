@@ -41,18 +41,57 @@
             app:srcCompat="@drawable/comuna13"
             android:contentDescription="Image of Comuna 13" />
 
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/locationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/locationTitle"
+            android:textColor="#F27C47"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rating" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/location"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/locationTitle"
+            app:layout_constraintTop_toBottomOf="@+id/rating" />
+
         <TextView
             android:id="@+id/descriptionTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="15dp"
             android:text="@string/description_title"
             android:textColor="#F27C47"
             android:textSize="25sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintTop_toBottomOf="@+id/locationTitle" />
 
         <TextView
             android:id="@+id/desciption"
@@ -86,10 +125,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="17dp"
             android:text="@string/temperature"
             android:textColor="#000000"
-            android:textSize="25sp"
+            android:textSize="22sp"
             app:layout_constraintStart_toEndOf="@+id/temperature_title"
             app:layout_constraintTop_toBottomOf="@+id/desciption" />
 
@@ -107,20 +146,33 @@
             app:layout_constraintTop_toBottomOf="@+id/temperature_title" />
 
         <TextView
-            android:id="@+id/recommend"
+            android:id="@+id/recommend1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="34dp"
-            android:layout_marginBottom="30dp"
-            android:text="@string/description"
+            android:text="Escaleras Electricas"
             android:textColor="#000000"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/recommend_title" />
+
+        <TextView
+            android:id="@+id/recommend2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:text="Arte callejero"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recommend1" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
