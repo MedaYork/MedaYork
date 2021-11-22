@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">MedaYork</string>
+    <string name="subtitle1">Recorriendo el sabor</string>
+    <string name="subtitle2">Paisa</string>
+    <string name="buttonIndex">Comenzar</string>
+    <string name="title1">Meda</string>
+    <string name="title2">York</string>
+    <string name="title_list_tour">Sitios Turisticos</string>
+    <string name="comuna13">Comuna 13</string>
+    <string name="description_title">Descripcion</string>
+    <string name="description">
+        Uno de los sitios que visitamos en Colombia y del que quiero hablarte hoy, es la Comuna 13 de Medellín.
+        Esta comuna es conocida con el nombre de “La cuna de Pablo Escobar”, donde tiempo atrás era un epicentro
+        de violencia, casas precarias construidas en medio de las colinas, calles estrechas y empinadas, que
+        generaban múltiples callejones y miradores, ideales para delincuentes y el comercio de droga.
+        La relación directa que había entre la Comuna 13 y la violencia, poco a poco ha ido quedando atrás,
+        gracias el esfuerzo de su comunidad, especialmente los jóvenes artistas y sin duda el gobierno.
+        Actualmente la han convertido en un sitio totalmente turístico y realmente vale la pena ir a conocerlo.
+    </string>
+    <string name="temperature_title">Temperatura</string>
+    <string name="temperature">18ºC</string>
+    <string name="recommend_places">Sitios Recomendados</string>
+    <string name="locationTitle">Ubicacion</string>
+    <string name="location">Medellin, Colombia</string>
 </resources>
