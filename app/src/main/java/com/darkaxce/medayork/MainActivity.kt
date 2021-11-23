@@ -15,5 +15,4 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
-    //Comment for created Branch feature/user_history_2
 }
