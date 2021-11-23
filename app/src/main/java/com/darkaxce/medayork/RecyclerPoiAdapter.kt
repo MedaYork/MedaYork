@@ -20,7 +20,7 @@ import androidx.annotation.NonNull
 
 class RecyclerPoiAdapter(private val mContext: Context, mGerencia: ArrayList<Poi>?) :
     RecyclerView.Adapter<RecyclerPoiAdapter.MyViewHolder?>(), View.OnClickListener {
-    private val mGerencia: ArrayList<Poi>
+    private val mPoi: ArrayList<Poi>
     private var listener: View.OnClickListener? = null
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): MyViewHolder {
 
@@ -30,12 +30,15 @@ class RecyclerPoiAdapter(private val mContext: Context, mGerencia: ArrayList<Poi
     }
 
     override fun onBindViewHolder(myViewHolder: MyViewHolder, i: Int) {
-        myViewHolder.txtNombre.setText(mGerencia[i].name)
-        myViewHolder.txtRecaudo.setText(mGerencia[i].description_short)
+        myViewHolder.txtNombre.setText(mPoi[i].name)
+        myViewHolder.txtRecaudo.setText(mPoi[i].description_short)
+        Picasso.get().load(mPoi[i].img)
+            .resize(300, 300) // resizes the image to these dimensions (in pixel). does not respect aspect ratio
+            .into(myViewHolder.image);
     }
 
     override fun getItemCount(): Int {
-        return mGerencia.size
+        return mPoi.size
     }
 
     fun setOnClickListener(listener: View.OnClickListener?) {
@@ -61,6 +64,6 @@ class RecyclerPoiAdapter(private val mContext: Context, mGerencia: ArrayList<Poi
     }
 
     init {
-        this.mGerencia = mGerencia as ArrayList<Poi>
+        this.mPoi = mGerencia as ArrayList<Poi>
     }
 }

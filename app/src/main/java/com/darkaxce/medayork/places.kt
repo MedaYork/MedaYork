@@ -1,10 +1,12 @@
 package com.darkaxce.medayork
 
+import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
@@ -39,9 +41,12 @@ class places : AppCompatActivity() {
             val queue = Volley.newRequestQueue(applicationContext)
 
             //URL
-            val url ="http://190.248.57.51:9999/movil/list_poi.php"// + "Recaudos/webresources/generic/recaudos"
+            val url ="http://190.248.57.51:9999/movil/list_poi.php"
 
-            //String url = "http://10.90.50.57:15777/Recaudos/webresources/generic/recaudos";
+            val progressDialog = ProgressDialog(this@places)
+            progressDialog.setTitle("MedaYork")
+            progressDialog.setMessage("Application is loading, please wait")
+            progressDialog.show()
 
             val stringRequest = StringRequest(Request.Method.GET, url,
                 Response.Listener { response ->
@@ -91,7 +96,7 @@ class places : AppCompatActivity() {
 
                             var poi = Poi(id,name,img,description,description_short,rating,temperature,location,recommendedPlaces)
                             listPoi?.add(poi)
-                            Log.d("errorruben","cargando información")
+                            progressDialog.dismiss()
                         }
 
                         val myAdapter = RecyclerPoiAdapter(this, listPoi)
@@ -101,10 +106,13 @@ class places : AppCompatActivity() {
 
                                 val intent =
                                     Intent(applicationContext, DetailPlaceActivity::class.java)
+                                var index = recyclerPoi?.getChildAdapterPosition(view)
+                                var id = index?.let { listPoi?.get(it)?.id }
                                 intent.putExtra(
-                                    "id",1
-                                    //listPoi?.get(recyclerPoi.getChildAdapterPosition(view)).id
+                                    "id",
+                                            id
                                 )
+                                Toast.makeText(applicationContext,"this is toast message = "+id, Toast.LENGTH_SHORT).show()
                                 startActivity(intent)
                                 finish()
 
