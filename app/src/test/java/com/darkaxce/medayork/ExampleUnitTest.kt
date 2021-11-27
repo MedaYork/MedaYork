@@ -1,4 +1,4 @@
-package com.darkaxce.medayork
+package com.darkaxce.myfirstapp
 
 import org.junit.Test
 
