@@ -41,7 +41,7 @@ class places : AppCompatActivity() {
             val queue = Volley.newRequestQueue(applicationContext)
 
             //URL
-            val url ="http://190.248.57.51:9999/movil/list_poi.php"
+            val url ="http://pruebas.barranquilla.gov.co:15777/MisionTic/webresources/misionTic/list_all"
 
             val progressDialog = ProgressDialog(this@places)
             progressDialog.setTitle("MedaYork")
@@ -52,12 +52,12 @@ class places : AppCompatActivity() {
                 Response.Listener { response ->
                     try {
 
-                        var id : String
+                        var id : Int
                         var name : String
                         var img : String
                         var description : String
                         var description_short : String
-                        var rating : String
+                        var rating : Float
                         var temperature : String
                         var location : String
                         var recommendedPlaces : String
@@ -81,16 +81,15 @@ class places : AppCompatActivity() {
                         }
 
                         for (i in 0 until dataFormatPreference.length()) {
-                            id = dataFormatPreference.getJSONObject(i).getString("id")
+                            id = dataFormatPreference.getJSONObject(i).getInt("id")
                             name = dataFormatPreference.getJSONObject(i).getString("name")
-                            img = dataFormatPreference.getJSONObject(i).getString("img")
+                            img = dataFormatPreference.getJSONObject(i).getString("image")
                             description = dataFormatPreference.getJSONObject(i).getString("description")
-                            description_short = dataFormatPreference.getJSONObject(i).getString("description_short")
-                            rating = dataFormatPreference.getJSONObject(i).getString("rating")
+                            description_short = dataFormatPreference.getJSONObject(i).getString("descriptionShort")
+                            rating = dataFormatPreference.getJSONObject(i).getDouble("rating").toFloat()
                             temperature = dataFormatPreference.getJSONObject(i).getString("temperature")
                             location = dataFormatPreference.getJSONObject(i).getString("location")
                             recommendedPlaces = dataFormatPreference.getJSONObject(i).getString("recommendedPlaces")
-
 
 
 

@@ -12,11 +12,12 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        card_view:cardBackgroundColor="#ece7e7">
+        card_view:cardBackgroundColor="#ece7e7"
+        card_view:cardCornerRadius="4dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/purple_200"
             android:orientation="horizontal">
 
@@ -28,11 +29,11 @@
                 android:layout_marginRight="10dp"
                 android:src="@drawable/comuna13" />
 
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="277dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
-
                 <TextView
                     android:id="@+id/idNombre"
                     android:layout_width="wrap_content"
@@ -41,7 +42,6 @@
                     android:text="Nombre"
                     android:textSize="25sp"
                     android:textStyle="bold" />
-
                 <TextView
                     android:id="@+id/idInfo"
                     android:layout_width="wrap_content"
@@ -50,9 +50,21 @@
                     android:layout_marginBottom="15dp"
                     android:text="Descripcion " />
 
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:maxHeight="30dip"
+                    android:minHeight="30dip"
+                    android:numStars="5" />
             </LinearLayout>
+
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>

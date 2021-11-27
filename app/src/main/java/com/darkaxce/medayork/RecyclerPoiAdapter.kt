@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.darkaxce.medayork.Poi
@@ -32,6 +33,7 @@ class RecyclerPoiAdapter(private val mContext: Context, mGerencia: ArrayList<Poi
     override fun onBindViewHolder(myViewHolder: MyViewHolder, i: Int) {
         myViewHolder.txtNombre.setText(mPoi[i].name)
         myViewHolder.txtRecaudo.setText(mPoi[i].description_short)
+        myViewHolder.rating.setRating(mPoi[i].rating)
         Picasso.get().load(mPoi[i].img)
             .resize(300, 300) // resizes the image to these dimensions (in pixel). does not respect aspect ratio
             .into(myViewHolder.image);
@@ -55,11 +57,13 @@ class RecyclerPoiAdapter(private val mContext: Context, mGerencia: ArrayList<Poi
         var txtNombre: TextView
         var txtRecaudo: TextView
         var image: ImageView
+        var rating : RatingBar
 
         init {
             txtNombre = itemView.findViewById(R.id.idNombre)
             txtRecaudo = itemView.findViewById(R.id.idInfo)
             image = itemView.findViewById(R.id.idImagen)
+            rating = itemView.findViewById(R.id.ratingBar)
         }
     }
 
