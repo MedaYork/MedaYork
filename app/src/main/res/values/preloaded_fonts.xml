@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts">
+        <item>@font/abel</item>
+        <item>@font/glegoo_bold</item>
+        <item>@font/glegoo_regular</item>
+        <item>@font/junge</item>
+        <item>@font/poiretone_regular</item>
+        <item>@font/quicksand_bold</item>
+        <item>@font/quicksand_regular</item>
+        <item>@font/quicksand_light</item>
+        <item>@font/quicksand_medium</item>
+        <item>@font/quicksand_semibold</item>
+    </array>
+</resources>
