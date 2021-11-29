@@ -1,0 +1,12 @@
+com/example/appwithfragments/databinding/FragmentListTourPlaceBinding.java
+ com.example.appwithfragments.databinding.FragmentListTourPlaceBinding
+com/example/appwithfragments/databinding/ListTourPlaceDesignBinding.java
+ com.example.appwithfragments.databinding.ListTourPlaceDesignBinding
+com/example/appwithfragments/databinding/FragmentDetailTourPlaceBinding.java
+ com.example.appwithfragments.databinding.FragmentDetailTourPlaceBinding
+com/example/appwithfragments/databinding/FragmentMainBinding.java
+ com.example.appwithfragments.databinding.FragmentMainBinding
+com/example/appwithfragments/BuildConfig.java
+ com.example.appwithfragments.BuildConfig
+com/example/appwithfragments/databinding/ActivityMainBinding.java
+ com.example.appwithfragments.databinding.ActivityMainBinding
