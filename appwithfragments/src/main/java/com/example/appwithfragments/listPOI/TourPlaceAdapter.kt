@@ -48,9 +48,9 @@ class TourPlaceAdapter(
         fun render(tourPlace : TourPlace){
             dataPlace=tourPlace
             name.text=tourPlace.name
-            description.text=tourPlace.description_short
+            description.text=tourPlace.descriptionShort
             rating.rating= tourPlace.rating.toFloat()
-            Picasso.get().load(tourPlace.img).resize(300, 300).into(image)
+            Picasso.get().load(tourPlace.image).resize(300, 300).into(image)
         }
     }
 

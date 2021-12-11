@@ -20,8 +20,11 @@ import com.android.volley.toolbox.Volley
 import com.example.appwithfragments.databinding.FragmentListTourPlaceBinding
 import com.example.appwithfragments.main.MainActivity
 import com.example.appwithfragments.models.TourPlace
+import com.example.appwithfragments.retrofit.TourPlaceApiAdapter
 import org.json.JSONArray
 import org.json.JSONException
+import retrofit2.Call
+import retrofit2.Callback
 import java.io.IOException
 import java.nio.charset.Charset
 
@@ -111,11 +114,29 @@ class ListTourPlaceFragment : Fragment() {
             val queue = Volley.newRequestQueue(activity)
 
             //URL
-            val url ="http://190.248.57.51:15777/MisionTic/webresources/misionTic/list_all"
+            val url ="http://181.49.136.167:15778/MisionTic/webresources/misionTic/list_all"
 
-           
+            val call = TourPlaceApiAdapter.apiService()?.getTourPlaces()
+            //apiInterface.enqueue( Callback<List<Movie>>())
+            call?.enqueue( object : Callback<ArrayList<TourPlace>> {
+                override fun onResponse(
+                    call: Call<ArrayList<TourPlace>>,
+                    response: retrofit2.Response<ArrayList<TourPlace>>
+                ) {
 
-            val stringRequest = StringRequest(
+                    if(response?.body() != null) {
+                        //listTourPlace = response.body()
+                        initRecycler(response.body() as ArrayList<TourPlace>)
+                    }
+                }
+
+                override fun onFailure(call: Call<ArrayList<TourPlace>>?, t: Throwable?) {
+
+                }
+            })
+
+
+           /*val stringRequest = StringRequest(
                 Request.Method.GET, url,
                 Response.Listener { response ->
                     try {
@@ -179,7 +200,7 @@ class ListTourPlaceFragment : Fragment() {
                     Log.d("error", error.toString())
                 })
 
-            queue.add(stringRequest)
+            queue.add(stringRequest)*/
         } catch (e: Exception) {
             Log.d("error", e.toString())
             e.printStackTrace()

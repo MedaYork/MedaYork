@@ -28,7 +28,7 @@ class DetailTourPlaceFragment : Fragment() {
 
         with(detailTourPlaceBinding){
             namePlace.text= tourPlace.name
-            Picasso.get().load(tourPlace.img).into(imagePlace)
+            Picasso.get().load(tourPlace.image).into(imagePlace)
             description.text= tourPlace.description
             location.text = tourPlace.location
             ratingPlace.rating=tourPlace.rating.toString().toFloat()
