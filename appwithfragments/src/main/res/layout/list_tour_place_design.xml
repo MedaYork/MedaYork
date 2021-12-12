@@ -11,7 +11,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="203dp"
+        android:layout_height="211dp"
         android:background="#61FFFFFF"
         android:padding="15dp">
 
@@ -45,8 +45,8 @@
             android:layout_marginEnd="20dp"
             android:justificationMode="inter_word"
             android:text="Una breve descripcion del lugar"
-            android:textColor="#000000"
             android:textAlignment="gravity"
+            android:textColor="#000000"
             android:textSize="15sp"
             android:textStyle="italic"
             cardview:layout_constraintEnd_toEndOf="parent"

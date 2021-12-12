@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My First App</string>
+    <string name="app_name">MedaYork</string>
     <string name="subtitle1">Recorriendo el sabor</string>
     <string name="subtitle2">Paisa</string>
     <string name="buttonIndex">Comenzar</string>
@@ -14,4 +14,9 @@
     <string name="recommend_places">Sitios Recomendados</string>
     <string name="locationTitle">Ubicacion</string>
     <string name="location">Medellin, Colombia</string>
+
+    <string name="notifications">Notificaciones</string>
+    <string name="sound_notifications">Activar sonido de notificaciones</string>
+    <string name="preferences">Preferencias</string>
+
 </resources>
