@@ -67,7 +67,7 @@ class MapsFragment : Fragment() {
         latitude = datosRecuperados?.getFloat("latitud") ?: 0f
         longitude = datosRecuperados?.getFloat("longitud") ?:0f
         name = datosRecuperados?.getString("name").toString()
-        Log.d("longitud", longitude.toString())
+        //Log.d("longitud", longitude.toString())
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
 
