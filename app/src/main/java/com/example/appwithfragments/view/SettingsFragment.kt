@@ -1,11 +1,11 @@
-package com.example.appwithfragments.preference
+package com.example.appwithfragments.view
 
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import androidx.preference.PreferenceFragmentCompat
 import com.example.appwithfragments.R
-import com.example.appwithfragments.main.MainActivity
+import com.example.appwithfragments.view.MainActivity
 
 class SettingsFragment : PreferenceFragmentCompat() {
 

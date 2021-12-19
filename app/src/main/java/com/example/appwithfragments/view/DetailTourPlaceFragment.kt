@@ -1,4 +1,4 @@
-package com.example.appwithfragments.details
+package com.example.appwithfragments.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,7 +8,6 @@ import android.view.ViewGroup
 
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.appwithfragments.main.MapsFragment
 import com.example.appwithfragments.R
 import com.example.appwithfragments.databinding.FragmentDetailTourPlaceBinding
 import com.example.appwithfragments.models.TourPlace

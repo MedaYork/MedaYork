@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.appwithfragments.main.MainFragment"
+        android:name="com.example.appwithfragments.view.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/listTourPlaceFragment"
-        android:name="com.example.appwithfragments.listPOI.ListTourPlaceFragment"
+        android:name="com.example.appwithfragments.view.ListTourPlaceFragment"
         android:label="fragment_list_tour_place"
         tools:layout="@layout/fragment_list_tour_place" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailTourPlaceFragment"
-        android:name="com.example.appwithfragments.details.DetailTourPlaceFragment"
+        android:name="com.example.appwithfragments.view.DetailTourPlaceFragment"
         android:label="DetailTourPlaceFragment">
         <argument
             android:name="detailPlace"
@@ -36,11 +36,11 @@
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.example.appwithfragments.preference.SettingsFragment"
+        android:name="com.example.appwithfragments.view.SettingsFragment"
         android:label="SettingsFragment" />
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="com.example.appwithfragments.main.MapsFragment"
+        android:name="com.example.appwithfragments.view.MapsFragment"
         android:label="fragment_maps"
         tools:layout="@layout/fragment_maps" />
 </navigation>

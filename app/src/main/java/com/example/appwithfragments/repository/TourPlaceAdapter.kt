@@ -1,4 +1,4 @@
-package com.example.appwithfragments.listPOI
+package com.example.appwithfragments.repository
 
 import android.view.LayoutInflater
 import android.view.View

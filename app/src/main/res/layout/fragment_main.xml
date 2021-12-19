@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/index_guatape"
     android:orientation="vertical"
-    tools:context=".main.MainFragment" >
+    tools:context=".view.MainFragment" >
 
     <TextView
         android:id="@+id/subtitle1"

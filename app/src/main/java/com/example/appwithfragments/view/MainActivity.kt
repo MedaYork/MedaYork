@@ -1,4 +1,4 @@
-package com.example.appwithfragments.main
+package com.example.appwithfragments.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,7 +9,6 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.appwithfragments.R
-import com.example.appwithfragments.preference.SettingsFragment
 
 class MainActivity : AppCompatActivity() {
 

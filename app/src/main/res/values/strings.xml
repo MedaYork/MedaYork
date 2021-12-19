@@ -5,15 +5,15 @@
     <string name="buttonIndex">Comenzar</string>
     <string name="title1">Meda</string>
     <string name="title2">York</string>
-    <string name="title_list_tour">Sitios Turisticos</string>
+    <string name="title_list_tour">Sitios Turísticos</string>
     <string name="comuna13">Comuna 13</string>
-    <string name="description_title">Descripcion</string>
+    <string name="description_title">Descripción</string>
     <string name="description">La comuna 13 es una region muy conocida en la ciduad de medellin por su largo recorrido historico desde los tiempos de pablo escobar ...</string>
     <string name="temperature_title">Temperatura</string>
     <string name="temperature">18 C</string>
     <string name="recommend_places">Sitios Recomendados</string>
-    <string name="locationTitle">Ubicacion</string>
-    <string name="location">Medellin, Colombia</string>
+    <string name="locationTitle">Ubicación</string>
+    <string name="location">Medellín, Colombia</string>
 
     <string name="notifications">Notificaciones</string>
     <string name="sound_notifications">Activar sonido de notificaciones</string>

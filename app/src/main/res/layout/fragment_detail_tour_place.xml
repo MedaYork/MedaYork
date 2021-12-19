@@ -171,7 +171,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="11dp"
             android:layout_marginBottom="3dp"
-            android:text="Localizacion"
+            android:text="Localización"
             app:layout_constraintBottom_toTopOf="@+id/location"
             app:layout_constraintEnd_toEndOf="@+id/location" />
 

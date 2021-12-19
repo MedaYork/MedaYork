@@ -1,4 +1,4 @@
-package com.example.appwithfragments.main
+package com.example.appwithfragments.view
 
 import androidx.fragment.app.Fragment
 
@@ -12,7 +12,6 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import android.util.Log
 import com.example.appwithfragments.R
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 
